@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double salario,percentualAumento,totalValor,novoSalario;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+		System.out.println("Digite o Salario:");
+		salario = ler.nextDouble();
+		
+		System.out.println("Digite o Percentual do aumento:");
+		percentualAumento = ler.nextDouble();
+		
+		totalValor = salario + percentualAumento;
+		System.out.println("O valor do aumento é" +totalValor);
+		
+		novoSalario = salario * percentualAumento/100 + salario;
+		System.out.println("\n O valor do novo salario é" +novoSalario);
+
+	
+  }
+}
