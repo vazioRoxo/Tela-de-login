@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double salarioBase, gratificacao, imposto, salarioReceber;
+
+        System.out.print("Digite o salário base do funcionário: ");
+        salarioBase = scanner.nextDouble();
+
+        // Calcula a gratificação
+        gratificacao = 50.0;
+
+        // Calcula o imposto (10% do salário base)
+        imposto = 0.10 * salarioBase;
+
+        // Calcula o salário a receber
+        salarioReceber = salarioBase + gratificacao - imposto;
+
+        System.out.println("O salário a receber é: R$ " + salarioReceber);
+
+        scanner.close();
+    }
+}
