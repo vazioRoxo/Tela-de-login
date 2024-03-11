@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double numeroPositivo,aoQuadrado,aoCubo,raizQuadrada,raizCubica,total;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+		System.out.println("Digite o numero Positivo:");
+		numeroPositivo = ler.nextDouble();
+		
+		aoQuadrado = numeroPositivo * numeroPositivo;
+		System.out.println("Ao Quadrado do numero positivo é:"+ aoQuadrado);
+		
+		aoCubo = numeroPositivo * numeroPositivo * numeroPositivo * numeroPositivo;
+		System.out.println("O cubo do numero positivo é:"+ aoCubo);
+		
+		raizQuadrada = Math.sqrt(numeroPositivo);
+		System.out.println("A raiz quadrada do numero positivo é:"+ raizQuadrada);
+		
+		raizCubica = Math.cbrt(numeroPositivo);
+		System.out.println("A raiz cubica do numero positivo é:"+ raizCubica);
+		
+		
+
+  }
+}
