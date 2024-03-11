@@ -23,7 +23,7 @@ class Main {
 	System.out.println("A raiz de X1 = - b + sqrt (delta/2a é :"+ raizQuadrada1);
 	
 	raizQuadrada2 = - coeficenteB - Math. sqrt(delta)/coeficenteA * coeficenteA;
-	System.out.println("A raiz de X1 = - b + sqrt (delta/2a é :"+ raizQuadrada2);
+	System.out.println("A raiz de X2 = - b - sqrt (delta)/2a é :"+ raizQuadrada2);
 	
 
   }
