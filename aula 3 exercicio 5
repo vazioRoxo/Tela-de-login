@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double coeficenteA,coeficenteB,coeficienteC,delta,raizQuadrada1,raizQuadrada2;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+	System.out.println("Digite o coefciente A:");
+	coeficenteA = ler.nextDouble();
+	
+	System.out.println("Digite o coefciente B:");
+	coeficenteB = ler.nextDouble();
+	
+	System.out.println("Digite o coefciente C:");
+	coeficienteC = ler.nextDouble();
+	
+	delta = (coeficenteB * coeficenteB- 4) + coeficenteA + coeficienteC;
+	System.out.println("Delta é:"+ delta);
+	
+	raizQuadrada1 = - coeficenteB + Math. sqrt(delta/coeficenteA * coeficenteA);
+	System.out.println("A raiz de X1 = - b + sqrt (delta/2a é :"+ raizQuadrada1);
+	
+	raizQuadrada2 = - coeficenteB - Math. sqrt(delta)/coeficenteA * coeficenteA;
+	System.out.println("A raiz de X1 = - b + sqrt (delta/2a é :"+ raizQuadrada2);
+	
+
+  }
+}
