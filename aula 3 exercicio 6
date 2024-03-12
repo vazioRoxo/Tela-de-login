@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double num1,num2,iguais,maior,menor;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+    System.out.println("informe o numero primeiro numero:");
+	num1 = ler.nextDouble();
+	
+	System.out.println("Informe o segundo numero:");
+	num2 = ler.nextDouble();
+    
+    if (num1 == num2)
+    System.out.println("Os numeros são iguais:");
+	igual = ler.nextDouble();
+	
+	else if
+	maior = max(num1,num2);
+	menor = min (num1,num2);
+	System.out.println("O maior numero é:"+maior);
+	System.out.println("O menor numero é:"+menor);
+
+  }
