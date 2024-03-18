@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Lista2 {
+  public static void main(String[] args) {
+     double coeficienteA,coeficienteB,valorDeC;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+    System.out.println("informe o coeficiente A:");
+	coeficienteA = ler.nextDouble();
+	
+	System.out.println("Informe o coeficiente B:");
+	coeficienteB = ler.nextDouble();
+    
+   valorDeC = coeficienteA * coeficienteA + coeficienteB * coeficienteB;
+   System.out.println("o valor de C do teorema de pitagoras é:"+valorDeC);
+
+  }
+}
