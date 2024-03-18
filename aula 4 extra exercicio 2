@@ -13,7 +13,7 @@ class Lista2 {
 	etanol = ler.nextDouble();
     
     if (gasolina == etanol){
-    	System.out.println("Os os valores são iguas:");
+    	System.out.println("Os preços são iguais:");
 	
 	}else{
 			
