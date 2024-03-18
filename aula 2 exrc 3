@@ -3,26 +3,21 @@ import java.io.*;
 
 class Main {
   public static void main(String[] args) {
-     double ladoDireito,ladoEsquerdo,altura,baseDoRetangulo,area,total;
+     double altura,baseDoRetangulo,area,total;
 		Scanner ler = new 
     Scanner(System.in);
     
-		System.out.println("Digite o lado Direito do Retangulo:");
-		ladoDireito = ler.nextDouble();
 
-		System.out.println("Digite o lado Esquedo do Retangulo:");
-		ladoEsquerdo = ler.nextDouble();
-		
 		System.out.println("Digite a Base do Retangulo:");
 		baseDoRetangulo = ler.nextDouble();
 		
 		System.out.println("Digite a Altura do Retangulo:");
 		altura = ler.nextDouble();
 		
-		area = baseDoRetangulo * baseDoRetangulo * altura ;
+		area = baseDoRetangulo * altura ;
 		System.out.print("a area é: " + area);
     
-		total = ladoDireito + ladoEsquerdo + baseDoRetangulo;
-		System.out.print("\n o perimetro é: " + total);
+		total =  baseDoRetangulo*2+altura*2;
+		System.out.print("\no perimetro é: " + total);
   }
 }
