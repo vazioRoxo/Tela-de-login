@@ -16,13 +16,13 @@ class Main {
 	System.out.println("Digite o coefciente C:");
 	coeficienteC = ler.nextDouble();
 	
-	delta = (coeficenteB * coeficenteB- 4) + coeficenteA + coeficienteC;
+	delta = coeficenteB * coeficenteB - 4 * coeficenteA * coeficienteC;
 	System.out.println("Delta é:"+ delta);
 	
-	raizQuadrada1 = - coeficenteB + Math. sqrt(delta/coeficenteA * coeficenteA);
+	raizQuadrada1 = (- coeficenteB + Math. sqrt(delta))/(coeficenteA + coeficenteA);
 	System.out.println("A raiz de X1 = - b + sqrt (delta/2a é :"+ raizQuadrada1);
 	
-	raizQuadrada2 = - coeficenteB - Math. sqrt(delta)/coeficenteA * coeficenteA;
+	raizQuadrada2 = (- coeficenteB - Math. sqrt(delta))/(coeficenteA + coeficenteA);
 	System.out.println("A raiz de X2 = - b - sqrt (delta)/2a é :"+ raizQuadrada2);
 	
 
