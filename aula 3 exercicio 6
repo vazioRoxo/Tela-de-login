@@ -1,9 +1,8 @@
 import java.util.Scanner;
-import java.io.*;
 
 class Main {
   public static void main(String[] args) {
-     double num1,num2,iguais,maior,menor;
+     double num1,num2;
 		Scanner ler = new 
     Scanner(System.in);
     
@@ -13,14 +12,14 @@ class Main {
 	System.out.println("Informe o segundo numero:");
 	num2 = ler.nextDouble();
     
-    if (num1 == num2)
-    System.out.println("Os numeros são iguais:");
-	igual = ler.nextDouble();
+    if (num1 == num2){
+    	System.out.println("Os numeros são iguais:");
 	
-	else if
-	maior = max(num1,num2);
-	menor = min (num1,num2);
-	System.out.println("O maior numero é:"+maior);
-	System.out.println("O menor numero é:"+menor);
-
+	}else{
+			
+			System.out.println("O maior numero é:"+Math.max (num1, num2));
+			System.out.println("O menor numero é:"+Math.min (num1, num2));
   }
+  ler.close();
+  }
+}
