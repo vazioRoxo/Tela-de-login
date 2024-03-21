@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.io.*;
+
+class ListaAtividade {
+  public static void main(String[] args) {
+     double salarioAtual,aumento,novoSalario;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+
+		System.out.println("Digite o seu salario atual:");
+		salarioAtual = ler.nextDouble();
+
+		aumento = salarioAtual * 0.25;
+		
+		novoSalario = salarioAtual + aumento;
+		System.out.println("O salario atual é"+novoSalario);
+		
+			
+  }
+}
