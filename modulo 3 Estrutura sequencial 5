@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.io.*;
+
+class ListaAtividade {
+  public static void main(String[] args) {
+     double diagonalMaior,diagonalMenor,area;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+
+		System.out.println("Digite a diagonal maior:");
+		diagonalMaior = ler.nextDouble();
+
+		System.out.println("Digite a diagonal menor:");
+		diagonalMenor = ler.nextDouble();
+		
+		area = (diagonalMaior * diagonalMenor) /2;
+		System.out.println("A area do losango é" +area);
+		
+			
+  }
+}
