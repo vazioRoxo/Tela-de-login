@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Main {
+  public static void main(String[] args) {
+     double cotaçãoDolarReal,valorDolar,valorReal;
+		Scanner ler = new 
+    Scanner(System.in);
+    
+    cotaçãoDolarReal = 4.98;
+    
+	System.out.println("Digite o valor que voce possui em dolar:");
+	valorDolar = ler.nextDouble();
+	
+	valorReal = valorDolar * cotaçãoDolarReal;
+	System.out.println("Este valor em reais é:"+ valorReal);
+
+
+  }
+}
