@@ -1,0 +1,54 @@
+
+import java.util.Scanner;
+import java.io.*;
+
+public class SwitchCase {
+
+public static void main (String []args){
+   Scanner ler = new Scanner(System.in);
+    double num1,num2;
+    char operador;
+
+    System.out.println("Informe o primeiro numero:");
+    num1 = ler.nextDouble();
+
+    System.out.println("Informe o primeiro numero:");
+    num2 = ler.nextDouble();
+
+    System.out.println("Escolha o operado(+,-,*,/):");
+     operador = ler.next().charAt(0);
+
+    double resultado;
+     switch (operador) {
+
+case '+':
+      resultado = num1 + num2;
+      System.out.println("resultado:"+resultado);
+      break;
+
+case '-':
+      resultado = num1 - num2;
+      System.out.println("resultado:"+resultado);
+      break;
+
+ case '*':
+      resultado = num1 * num2;
+      System.out.println("resultado:"+resultado);
+      break;
+
+ case '/':
+      resultado = num1 / num2;
+      System.out.println("resultado:"+resultado);
+      break;
+
+      default :
+       System.out.println("operador invalido.");
+      
+      
+      }
+
+
+
+
+ }
+}
