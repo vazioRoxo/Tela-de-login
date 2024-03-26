@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Recebendo os valores dos lados do triângulo
+        System.out.print("Digite o valor de X: ");
+        double x = scanner.nextDouble();
+        System.out.print("Digite o valor de Y: ");
+        double y = scanner.nextDouble();
+        System.out.print("Digite o valor de Z: ");
+        double z = scanner.nextDouble();
+
+        // Verificando se os valores formam um triângulo
+        if (isTriangulo(x, y, z)) {
+            System.out.println("Os valores podem formar um triângulo.");
+        } else {
+            System.out.println("Os valores não podem formar um triângulo.");
+        }
+
+        scanner.close();
+    }
+
+    // Função para verificar se os valores formam um triângulo
+    public static boolean isTriangulo(double x, double y, double z) {
+        return (x < y + z) && (y < x + z) && (z < x + y);
+    }
+}
