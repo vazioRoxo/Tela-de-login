@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double peso, altura, imc;
+        String situacaoPeso;
+
+        System.out.print("Informe o peso em kg: ");
+        peso = scanner.nextDouble();
+
+        System.out.print("Informe a altura em metros: ");
+        altura = scanner.nextDouble();
+
+        imc = peso / (altura * altura);
+
+        if (imc < 20) {
+            situacaoPeso = "Abaixo do peso";
+        } else if (imc >= 20 && imc <= 25) {
+            situacaoPeso = "Peso normal";
+        } else if (imc > 25 && imc <= 30) {
+            situacaoPeso = "Sobrepeso";
+        } else if (imc > 30 && imc <= 40) {
+            situacaoPeso = "Obeso";
+        } else {
+            situacaoPeso = "Obeso mórbido";
+        }
+
+        System.out.println("Situação do peso: " + situacaoPeso);
+
+        scanner.close();
+    }
+}
+Agora o tipo double e todas as variáveis estão declaradas no início do programa.
+
+
+
+
+
+
+Message ChatGPT…
+
+ChatGP
