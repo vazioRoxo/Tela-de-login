@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        double altura, pesoIdeal;
+        int sexo;
+
+        System.out.println("Informe o sexo da pessoa:");
+        System.out.println("1 - Homem");
+        System.out.println("2 - Mulher");
+        sexo = scanner.nextInt();
+
+        System.out.print("Informe a altura da pessoa em metros (H): ");
+        altura = scanner.nextDouble();
+
+        if (sexo == 1) {
+            pesoIdeal = (72.7 * altura) - 58;
+        } else if (sexo == 2) {
+            pesoIdeal = (62.1 * altura) - 44.7;
+        } else {
+            System.out.println("Opção de sexo inválida.");
+            return;
+        }
+
+        System.out.println("O peso ideal é: " + pesoIdeal + " kg");
+
+        scanner.close();
+    }
+}
