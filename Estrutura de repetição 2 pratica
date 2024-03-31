@@ -7,6 +7,10 @@ public static void main (String []args){
    Scanner ler = new Scanner(System.in);
     double valorUm,valorDois,valorTres,valorQuatro,valorQuinto;
     
+   while (true) {
+	
+   
+
 
     System.out.println("Informe os 5 valores");
     valorUm = ler.nextDouble()*2;
@@ -22,9 +26,10 @@ public static void main (String []args){
 	System.out.println("Valor 5 dobrado " +valorQuinto);
 
 
+}
 
-
-ler.close();
 
  }
+ 
+
 }
