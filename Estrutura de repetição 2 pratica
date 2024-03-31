@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class ListaAtividade {
+
+public static void main (String []args){
+   Scanner ler = new Scanner(System.in);
+    double valorUm,valorDois,valorTres,valorQuatro,valorQuinto;
+    
+
+    System.out.println("Informe os 5 valores");
+    valorUm = ler.nextDouble()*2;
+    valorDois = ler.nextDouble()*2;
+	valorTres = ler.nextDouble()*2;
+	valorQuatro = ler.nextDouble()*2;
+	valorQuinto = ler.nextDouble()*2;
+
+	System.out.println("Valor 1 dobrado é " +valorUm);
+	System.out.println("Valor 2 dobrado é " +valorDois);
+    System.out.println("Valor 3 dobrado é"+valorTres);
+	System.out.println("Valor 4 dobrado é " +valorQuatro);
+	System.out.println("Valor 5 dobrado " +valorQuinto);
+
+
+
+
+ler.close();
+
+ }
+}
