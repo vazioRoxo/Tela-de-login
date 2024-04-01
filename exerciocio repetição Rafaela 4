@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import java.io.*;
+
+public class ListaAtividade {
+
+public static void main (String []args){
+   Scanner ler = new Scanner(System.in);
+    double kills,deaths,assists;
+    char resultado;
+ 
+	    
+        while (true) {
+            
+        
+    
+   
+        System.out.println("QUANTAS KILLS VC COLETOU BAGRE?");
+        kills = ler.nextDouble();
+        System.out.println("MORREU QUANTAS VEZES SEU RUIM?");
+        deaths = ler.nextDouble();
+        System.out.println("DEU ASSISTENCIA QUANTAS VEZES?");
+        assists = ler.nextDouble();
+
+
+        if (kills<=5){
+            System.out.println("SÓ ISSO SEU NOOB?");
+
+        } else if (kills>=20){
+
+            System.out.println("SLK PRO PLAYER");
+        }  if (deaths>=20){
+
+            System.out.println("Houston, we have a problem");
+
+        }  if  (assists>=20){
+
+            System.out.println("SLK DOG DEU ASSISTENCIA");
+
+        }
+
+        System.out.println("Alguem venceu essa merda de partida? (S/N)");
+            resultado = ler.next().charAt(0);
+            if (resultado == 'S' || resultado == 's') {
+                break; 
+
+        
+	    
+        
+     }
+  }
+ }
+}
