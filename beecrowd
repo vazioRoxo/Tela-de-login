@@ -1,0 +1,56 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Impedimento {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            // Ler o número de jogadores atacantes (A) e defensores (D)
+            int A = scanner.nextInt();
+            int D = scanner.nextInt();
+
+            // Verificar condição de término
+            if (A == 0 && D == 0) {
+                break;
+            }
+
+            // Ler as distâncias dos jogadores atacantes até a linha do gol
+            int[] B = new int[A];
+            for (int i = 0; i < A; i++) {
+                B[i] = scanner.nextInt();
+            }
+
+            // Ler as distâncias dos defensores até a linha do gol
+            int[] C = new int[D];
+            for (int i = 0; i < D; i++) {
+                C[i] = scanner.nextInt();
+            }
+
+            // Ordenar as distâncias dos defensores em ordem crescente
+            Arrays.sort(C);
+
+            // Verificar se algum jogador atacante está impedido
+            boolean impedido = false;
+            for (int i = 0; i < A; i++) {
+                if (B[i] < C[1]) { // Verificar se o jogador está mais próximo que o penúltimo defensor
+                    impedido = true;
+                    break;
+                }
+            }
+
+            // Imprimir resultado para o caso de teste atual
+            if (impedido) {
+                System.out.println("Y");
+            } else {
+                System.out.println("N");
+            }
+
+            // Ler o restante da linha atual (se houver) para evitar problemas com a próxima entrada
+            scanner.nextLine();
+        }
+
+        scanner.close();
+    }
+}
