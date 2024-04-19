@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+    // Método para verificar se um número é primo
+    public static boolean ehPrimo(int num) {
+        if (num <= 1) {
+            return false; // Números menores ou iguais a 1 não são primos
+        }
+        if (num <= 3) {
+            return true; // 2 e 3 são primos
+        }
+        if (num % 2 == 0 || num % 3 == 0) {
+            return false; // Números divisíveis por 2 ou 3 não são primos (exceto 2 e 3)
+        }
+        for (int i = 5; i * i <= num; i += 6) {
+            if (num % i == 0 || num % (i + 2) == 0) {
+                return false; // Verifica divisibilidade por números da forma 6k ± 1 até a raiz quadrada de num
+            }
+        }
+        return true; // Se não houve divisão por nenhum número anterior, é primo
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Lê o número de casos de teste
+        int N = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha após o número
+
+        // Para cada caso de teste
+        for (int i = 0; i < N; i++) {
+            int X = scanner.nextInt();
+            scanner.nextLine(); // Consumir a quebra de linha após o número
+
+            // Verifica se X é primo usando a função ehPrimo
+            if (ehPrimo(X)) {
+                System.out.println(X + " eh primo");
+            } else {
+                System.out.println(X + " nao eh primo");
+            }
+        }
+
+        scanner.close(); // Fechar o scanner
+    }
+}
