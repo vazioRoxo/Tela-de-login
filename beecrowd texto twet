@@ -1,0 +1,15 @@
+Scanner scanner = new Scanner(System.in);
+
+        // Ler a linha de texto
+        String texto = scanner.nextLine();
+
+        // Verificar o comprimento do texto
+        if (texto.length() <= 140) {
+            System.out.println("TWEET");
+        } else {
+            System.out.println("MUTE");
+        }
+
+        scanner.close();
+    }
+}
