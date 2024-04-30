@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Projetos {
+    public static void main(String[] args) throws Exception {
+        int soma=0;
+        int tamanho=10;
+        int notas[] = new int[tamanho];
+        String nomes[] = new String[tamanho];
+        Scanner ler = new Scanner(System.in);
+
+        for(int i=0;i<tamanho;i++){
+        System.out.println("Digite o nome do aluno"+ (i+1) +":");
+        nomes[i]=ler.nextLine();
+        System.out.println("Digite a nota do aluno"+ (i+1)+":");
+        notas[i]=ler.nextInt();
+        soma+=notas[i];
+    
+        ler.nextLine();
+       
+    }
+
+        double media = soma/notas.length;
+
+        System.out.println("A media das notas é:"+media);
+
+       
+        System.out.println("Alunos com nota abaixo da media: ");
+        for (int i = 0; i < tamanho; i++) {
+            if (notas[i] < media) {
+                System.out.println("Aluno"+(i+1)+":"+nomes[i]);
+            }
+        }
+
+        System.out.println("Alunos com nota acima da media ou iguais: ");
+        for (int i = 0; i < tamanho; i++) {
+            if (notas[i] > media) {
+                System.out.println("Aluno"+(i+1)+":"+nomes[i]);
+            }
+        }
+ }
+}
