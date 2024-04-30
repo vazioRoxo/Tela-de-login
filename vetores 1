@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Projetos {
+    public static void main(String[] args) throws Exception {
+        int tamanho=10;
+        int notas[] = new int[tamanho];
+        String nomes[] = new String[tamanho];
+        Scanner ler = new Scanner(System.in);
+
+        for(int i=0;i<tamanho;i++){
+        System.out.println("Digite o nome do aluno"+ (i+1) +":");
+        nomes[i]=ler.nextLine();
+        System.out.println("Digite a nota do aluno"+ (i+1)+":");
+        notas[i]=ler.nextInt();
+    
+        ler.nextLine();
+       
+    }
+        int maiorNota=notas[0];
+        int menorNota=notas[0];
+
+        for(int i=1;i<tamanho;i++){
+            if(notas[i]>maiorNota);
+            maiorNota=notas[i];
+
+            if(notas[i]<menorNota);
+            menorNota=notas[i];
+
+
+
+        }
+        System.out.println("Maior nota: " + maiorNota);
+        System.out.println("Alunos com a maior nota:");
+        for (int i = 0; i < tamanho; i++) {
+            if (notas[i] == maiorNota) {
+                System.out.println(nomes[i]);
+            }
+        }
+
+        System.out.println("Maior nota: " + menorNota);
+        System.out.println("Alunos com a menor nota:");
+        for (int i = 0; i < tamanho; i++) {
+            if (notas[i] == menorNota) {
+                System.out.println(nomes[i]);
+            }
+        }
+ }
+}
