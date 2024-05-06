@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Projetos {
+    public static void main(String[] args) throws Exception {
+       int[] numeros = {5,2,7,10,15,5,54,67,12,43};
+       int numeroUsuario;
+       boolean temIgual=false;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("informe um numero");
+        numeroUsuario = ler.nextInt();
+
+       for (int i=0;i<numeros.length;i++){
+            if(numeroUsuario==numeros[i]){
+                    System.out.println("A posição:"+(i+1));
+                    temIgual = true;
+
+            } 
+        }
+        if (temIgual==false){
+            System.out.println("NAO TEM NO VETOR NAO!!");  
+        }
+        
+
+        ler.close();
+    }
+}
