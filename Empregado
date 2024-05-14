@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+ class Empregado {
+    
+        private String nome;
+        private int idade;
+        private double salario;
+
+        public  Empregado(String nome,int idade,double salario){
+                this.nome=nome;
+                this.idade=idade;
+                this.salario=salario;
+
+
+        }
+    }
+       public String getNome(){
+            return nome;
+       }
+       public void setNome(String nome){
+            this.nome=nome;
+       }
+    
+       public int getIdade(){
+            return idade;
+       }
+       public void setIdade(int idade){
+            this.idade=idade;
+       }
+       public double getSalario(){
+            return salario;
+       }
+       public void setSalario(double salario){
+            this.salario=salario;
+       }
+
+       public void promover{
+        if(idade>=18){
+        double  aumentarSalario(0.25);
+            System.out.println("Promoção realizada");
+        }else {
+            System.out.println("O empregado não tem idade");
+
+        }
+    }
+
+        public void aumentarSalario{
+            salario += salario * percentual;
+            System.out.println("salario aumentou para"+salario)
+
+        }
