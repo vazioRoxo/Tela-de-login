@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 
         }
-    }
+    
        public String getNome(){
             return nome;
        }
@@ -35,18 +35,19 @@ import java.util.ArrayList;
             this.salario=salario;
        }
 
-       public void promover{
+       public void promover(){
         if(idade>=18){
-        double  aumentarSalario(0.25);
+        double aumentarSalario(0.25);
             System.out.println("Promoção realizada");
-        }else {
+        }else{
             System.out.println("O empregado não tem idade");
 
         }
     }
 
-        public void aumentarSalario{
+        public void aumentarSalario(double percentual){
             salario += salario * percentual;
-            System.out.println("salario aumentou para"+salario)
+            System.out.println("salario aumentou para"+salario);
 
         }
+ }
