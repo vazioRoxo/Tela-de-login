@@ -37,8 +37,9 @@ import java.util.ArrayList;
 
        public void promover(){
         if(idade>=18){
-        double aumentarSalario(0.25);
+         aumentarSalario(0.25);
             System.out.println("Promoção realizada");
+            
         }else{
             System.out.println("O empregado não tem idade");
 
@@ -51,3 +52,17 @@ import java.util.ArrayList;
 
         }
  }
+        public void demitir(int razao){
+            switch (razao) {
+                case '1':
+                    System.out.println("Demissão realizada por justa causa");
+                    break;
+                case '2':
+               double multa = salario*0.40;
+                    System.out.println("Demissão por multa"+multa);
+                    break;
+            }
+                
+
+
+        }
