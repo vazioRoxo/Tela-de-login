@@ -44,7 +44,7 @@ public class terraqueo extends PersonagemDragonBall {
     }
     @Override
     public void calcularPoder(){
-            System.out.println("Estatus de poder"+poder);
+            System.out.println("Sstatus de poder"+ki);
 
 
     }
