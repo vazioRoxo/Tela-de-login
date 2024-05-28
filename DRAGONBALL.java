@@ -27,8 +27,27 @@ public interface Transformavel {
 
 
 
-public class Terraqueo extends PersonagemDragonBall {
+public class terraqueo extends PersonagemDragonBall {
 
+
+    public terraqueo (String pais,String cidade){
+        super(pais,cidade);
+        this.pais=pais;
+        this.cidade=cidade;
+
+
+    }
+    @Override
+    public String toString(){
+        return "Terraqueo País="+pais+"Cidade="+cidade;
+
+    }
+    @Override
+    public void calcularPoder(){
+            System.out.println("Estatus de poder"+poder);
+
+
+    }
 }
 
 
